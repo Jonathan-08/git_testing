@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 700px;
+    height: 500px;
+
+    /* width:fit-content;
+    height: fit-content; */
+    background-color: rgb(220, 220, 220);
+    border: 1px solid dodgerblue;
+    margin: 120px auto;
+    display: grid;
+    grid-template: repeat(3, 120px) / repeat(6, 100px);
+    gap: 3px 3px;
+    justify-items: center; /*permet de centrer les éléments dans leurs colonnes respectives*/
+    justify-content: center; /*permet de centrer le block "grid" */
+    align-items: center; /*permet de centrer verticalement les élément dans leurs colonnes respectives*/ 
+    align-content: center;
+}
+
+.box{
+    border: 1px solid black;
+    background-color: beige;
+    text-transform: uppercase;
+    width: 100px;
+    height: 100px;
+}
+
+/* .f{
+    grid-area: 2 / 2 / span 2/ span 2;
+} */
+
+/*.a{
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.j{
+    grid-area: 3 / 3 / span 3 / span 2;
+}
+
+.f{
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.c{
+    grid-area: 1 / 4 / span 2 / span 1;
+}
+
+.h{
+    grid-area: 2 / 5 / span 1 / span 2;
+}
+
+.l{
+    grid-area: 3 / 5 / span 3 / span 2;
+}
+
+/* création d'un overlap */
+/*.m{
+    grid-area: 4 / 4 / span 1 / span 2;
+}
+
+/* grid-template: number of rows / number of columns */
+/*grid-area: row-start / column-start / row-end / column-end*/
+
+/*faut faire en sorte qu'il y ait autant d'élément que de cases disponibles*/
